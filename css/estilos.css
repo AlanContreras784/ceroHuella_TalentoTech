@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet');
+
+/* ESTILOS DE RESETEO*/
+*{
+    font-family: "Encode Sans", sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*ESTILOS DE ETIQUETAS*/
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+h3{
+    text-align: center;
+    font-size: 1.2rem;
+}
+p{
+    font-weight: 700;
+}
+
+/*ESTILO DEL HEADER*/
+.header{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+        a{
+            display: flex;
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+            align-items: center;
+            img{
+                display: inline-block;
+                margin-right: 20px;
+                width: 150px;
+            }
+        }
+        ul{ 
+            display: flex;
+            list-style: none;
+            li{
+                padding: 20px;
+            }
+        }
+        .logo{
+            width: 100px;
+            background-color:white ;
+        }
+        
+        .tamañoCarrito{
+            font-size: 25px;
+        } 
+}
+
+/*ESTILOS DE COLORES*/
+.logoRV{
+    background-color: white;
+    width: 250px ;;
+}
+.colorPrincipal{
+    background-color:#7cb744fa
+;
+    color: white;
+}
+
+.colorSecundario{
+    background-color: #58585a;
+    color: white;
+    
+}
+
+.colorGradiente{
+   /*  background-image: radial-gradient(circle, #a5e1aa, #93e397, #80e483, #6ce56c, #56e553, #40d554, #28c553, #00b552, #00905a, #006b54, #024741, #1c2525);*/
+   background-image: radial-gradient(circle, #7cb744, #7ec33f, #80cf38, #81dc30, #81e826, #7adb26, #72ce26, #6bc125, #5b992a, #4a722a, #394e27, #272c22);
+    color: white;
+}
+.fuenteNegrita{
+    font-weight: 700;
+}
+
+
+/*ESTILOS DEL  INDEX-MAIN*/
+.contenedorIndex{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    background-image: url(../assets/img/plantas_1920.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    height: 90vh;
+    .anchoContenidoIndex{
+        margin-inline: auto;
+        margin-top: 30px;
+        padding: 10px;
+        width: 50%;
+        backdrop-filter: blur(15px) ;
+    }
+    img{
+        display: inline-block;
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.37);
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+    }
+    a{
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px;
+        border: 2px,solid, white;
+        border-radius: 6px;
+        text-decoration: none;
+        color: white;
+        box-shadow: -11px 14px 34px -6px rgba(69,61,61,0.89);
+    }
+}
+
+
+
+/*ESTILOS SECCION INDEX-PRODUCTOS*/
+.seccionProductosIndex{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+   h2{
+        padding: 20px;
+    }
+    p{
+       margin-inline:auto ;
+       padding-bottom: 20px;
+       width: 50vw;
+    }
+
+    .tarjetaCategorias{
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        h3{
+         padding: 2px;
+        }
+        div{
+            box-shadow: -21px 17px 20px 4px rgba(0,0,0,0.6);
+            text-align: center;
+            img{
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px ;
+                width: 250px;
+                height: 400px;
+            }
+          a{
+            text-decoration: none;
+            color: black;
+          }  
+         }
+
+    }
+}
+
+/*SECCION INDEX-CONTACTENOS*/
+.seccionContacto{
+    background-image: url(../assets/img/huella_co2.png);
+    color: white;
+    background-position:  center center;
+    height: 80vh;
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-repeat: repeat;
+    .anchoContenidoIndex{
+        margin-inline: auto;
+        margin-top: 30px;
+        padding: 10px;
+        width: 50%;
+        backdrop-filter: blur(15px) ;
+    }
+    a{
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px;
+        border: 2px,solid, white;
+        border-radius: 6px;
+        text-decoration: none;
+        color: white;
+        box-shadow: -11px 14px 34px -6px rgba(69,61,61,0.89);
+    }
+}
+
+/*ESTILOS SECCION INDEX-NOSOTROS*/
+.seccionNosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/*ESTILO GALERIA-PRODUCTOS*/
+.mainProductos{
+    margin-top: 50px;
+
+    h1{
+        padding: 30px;
+    }
+    h2{
+        padding: 20px;
+        margin-inline:auto ;
+        padding-bottom: 20px;
+        width: 50vw;
+    }
+    h3{
+        padding: 20px;
+    }
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 50px;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 400px;
+            box-shadow: -11px 14px 34px -6px rgba(69,61,61,0.89);
+            border-radius: 5px;
+    
+            img{
+                border-radius: 5px;
+                width: 100%;
+                height: 86%;
+            }
+            p{
+                text-align: center;
+                margin: 4px;
+            }
+            a{
+                display: inline-block;
+                border-radius: 6px;
+                text-decoration: none;
+                color: black;
+                border: 2px,solid, rgb(102, 95, 95);
+                box-shadow: -11px 14px 34px -6px rgba(69,61,61,0.89);
+                padding-left: 2px;
+                padding-right: 2px;
+                margin: 4px;
+            }   
+        }
+    }
+}
+
+/*ESTILO PAGINA CONTACTO*/
+.mainContacto{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .contenedorFormulario{
+        width:100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            row-gap: 20px;
+            .contenedorInput{
+                width: 100%;
+                select, input{
+                    border: none;
+                    border-radius: 5px;
+                    box-shadow: -11px 14px 34px -6px rgba(69,61,61,0.89);
+                    padding: 5px;
+                    width: 100%;
+                    height: 30px;
+                }
+                textarea{
+                    width: 100%;
+                }
+            }
+            .contenedorEnviar{
+                width: 50%;
+                .enviar{
+                    width: 100%;
+                    box-shadow: -11px 14px 34px -6px rgba(31, 30, 30, 0.89);
+                }
+             }     
+    }   
+}
+    .contenedorIframe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/*ESTILOS DEL FOOTER*/
+.footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    address{
+        padding: 2px;
+    }
+    p{
+        padding: 0;
+    }
+    .redesSociales{
+        display: flex;
+    }   
+    a{
+        display: inline-block;
+        padding: 2px;
+        text-align: center;
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+        li{
+        margin: 5px;
+        }
+    }
+    .logo{
+        width: 150px;
+    }
+    
+
+    .fa-whatsapp{
+        color: #4da637;
+        font-size: 64px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        
+    }
+    .tamañoCarrito{
+        font-size: 25px;
+    }
+    .contenedorWatsapp{
+        text-align: center;
+        background: white;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        
+    }
+    hr{
+        size: 5px;
+    }
+}
+
+
+
+

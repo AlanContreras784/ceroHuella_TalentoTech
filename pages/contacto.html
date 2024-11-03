@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cero Huella-Rock&Vida</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/7d40050c21.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+  <body>
+    <header id="header" class="header colorPrincipal">
+      <a href="../index.html">
+        <img
+          class="logo"
+          src="../assets/img/Logo Cero Huella Redondo.png"
+          alt=" logo Cero Huella- Rock&Vida, un circulo con una huella de zapato"
+        />
+        <img
+          class="logoRV"
+          src="../assets/img/R&V Logo Verde 1024(2).png"
+          alt=""
+        />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="productos.html">PRODUCTOS</a></li>
+          <li><a href="#">CONTACTO</a></li>
+          <li>
+            <a href="carrito.html">
+              <i class="fa-solid fa-cart-shopping tamañoCarrito"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="colorGradiente mainContacto">
+      <h1>CONTÁCTANOS</h1>
+      <h2>Estamos Aquí para Ayudarte</h2>
+      <!--utilizamos un div que contiene al formulario-->
+      <div class="contenedorFormulario">
+        <!--la estructura basica del formulario se compone de :
+                form: es la etiqueta que engloba nuestro formulario
+                label: sirve para escribir el nombre del campo a rellenar
+                input: sirve para crear un campo que permitira que el usuario complete datos
+                button: crea un boton  -->
+        <!--etiqueta formulario, en el atributo action se debe colocar un documento que va a recibir los datos que vamos a enviar-->
+        <form action="validar.html" class="colorMain formulario">
+          <!--utilizamos un div que contiene cada etiqueta label y cada etiqueta input-->
+          <div class="contenedorInput">
+            <!--El atributo for del label debe tener el id del input eso hace que se relacionen-->
+            <!-- <label for="nombre"> Nombre Completo </label>-->
+            <!--atributos de input:
+                        id= debe tener un codigo unico e irrepetible, no podemos ponerlo en otra etiqueta, nos servira para css
+                        type= indicaremos que tipo de dato tendra el input
+                                en type podemos poner
+                                button se comporta igual que una etiqueta button
+                                color: el usuario va a poder elegir un color
+                                date: introducir una fecha
+                                time: se puede introducir una hora
+                                datetime: esta deprecado,no funciona en el navegador
+                                datetime-local: se puede seleccionar fecha y hora, pero en firefox no funciona
+                                email: se puede introducir un mail
+                                hidden: un campo que puede tener informacion pero esta oculto para el usuario
+                                month : podra seleccionar un mes
+                                number : se utiliza para ingresar valores numericos
+                                password: se ingresan contraseñas
+                                range: establece un rango
+                                reset : limpia el formulario
+                                search: se utiliza para las barras de busqueda
+                                submit: se utiliza para enviar el formulario 
+                                tel: se utiliza para introducir numeros telefonicos
+                                text: valor por defecto
+                            
+                                url: se pueden introducir urls
+                                week: introduce una semana del año
+                                radio: seleccionador excluyente
+                                checkbox : seleccionador incluyente
+                                
+                        step: permite establecer el rango de intervalos en los que se pueden mover los valores de los los input de fecha y numéricos.
+                        min y max : se pueden utilzar en los siguientes types de input number, range, date, datetime-local, month, time y week.
+                        checked : atributo booleano que sirve para marcar como seleccionado un input type checked o radio
+                        value: dato que ingresa el usuario, se puede setear previamente en el html
+                        name: atributo obligatorio que servira para enviar la informacion del campo al servidor 
+                        class: atributo para luego darle estilos al elemento de html
+                        placeholder: da una pista o sugerencia de que completar al usuario
+                        required: hace que un campo del formulario sea obligatorio
+                        readonly: hace que un campo sea de solo lectura y aunque el campo este readonly se envia la info igual al servidor
+                        maxlenght- minlenght: establece el minimo y maximo de caracteres de un campo tipo texto
+                        disabled : desactiva el campo y no se podra hacer foco en él ni se enviara al servidor
+                        autofocus: cuando se carga el formulario se hace foco en ese campo
+                        autocomplete: especifica si un formulario o un campo de entrada debe tener el autocompletado activado o desactivado.
+                            funciona en  types: text, search, url, tel, email, password, datepickers, range, y color.
+                            tambien se puede utilizar en en form de la siguiente forma:
+                            <form action="validar.html"  autocomplete="on"> 
+
+
+                        -->
+            <input
+              id="nombre"
+              name="nombre"
+              type="text"
+              placeholder="Nombre y Apellido..."
+              minlength="3"
+              maxlength="50"
+              required
+              autofocus
+              autocomplete="off"
+            />
+          </div>
+          <div class="contenedorInput">
+            <input
+              id="mail"
+              name="mail"
+              type="email"
+              placeholder="Email ejemplo@mail.com"
+              required
+            />
+          </div>
+          <div class="contenedorInput">
+            <input
+              type="tel"
+              name="telefono"
+              id="telefono"
+              placeholder="Número telefónico"
+              required
+            />
+          </div>
+          <div class="contenedorInput">
+            <select name="provincia" id="prov">
+              <option value="sin" selected>Seleccione una provincia</option>
+              <option value="Caba">Capital Federal</option>
+              <option value="Buenos Aires">Bs. As.</option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="Chaco">Chaco</option>
+              <option value="Chubut">Chubut</option>
+              <option value="Cordoba">Cordoba</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Entre Rios">Entre Rios</option>
+              <option value="Formosa">Formosa</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="La Pampa">La Pampa</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="Misiones">Misiones</option>
+              <option value="Neuquen">Neuquen</option>
+              <option value="Rio Negro">Rio Negro</option>
+              <option value="Salta">Salta</option>
+              <option value="San Juan">San Juan</option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Sgo. del Estero">Sgo. del Estero</option>
+              <option value="Tierra del Fuego">Tierra del Fuego</option>
+              <option value="Tucuman">Tucuman</option>
+            </select>
+          </div>
+
+          <div class="contenedorInput">
+            <textarea
+              name="comentario"
+              id="comentario"
+              cols="30"
+              rows="10"
+              placeholder="Ingrese un Comentario"
+              required
+            ></textarea>
+          </div>
+          <div class="contenedorEnviar">
+            <input id="enviar" type="submit" value="Enviar" class="enviar" />
+          </div>
+        </form>
+      </div>
+      <div class="contenedorIframe">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13129.834635207251!2d-58.4172243!3d-34.643118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb4fc96babf1%3A0xb1d8999bd3d7ae9a!2sRock%20%26%20Vida!5e0!3m2!1ses-419!2sar!4v1727317955078!5m2!1ses-419!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+    <footer class="footer colorSecundario">
+      <div>
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../assets/img/logoCeroHuellas.jpeg"
+            alt="Logo de Cero Huellas- Rock&Vida,"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <address>
+        <p>
+          <span class="fuenteNegrita">Dirección:</span> Cnel. Pagola 3880, C1437
+          Cdad. Autónoma de Buenos Aires
+        </p>
+        <p><span class="fuenteNegrita">Teléfono:</span> +54 9 11 5997-3967</p>
+        <p>
+          <span class="fuenteNegrita">Correo electrónico:</span
+          >contacto@talento.com
+        </p>
+      </address>
+
+      <div>
+        <nav>
+          <h3>CONTENIDO</h3>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#nosotros">NOSOTROS</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li>
+              <a href="carrito.html">
+                <i class="fa-solid fa-cart-shopping tamañoCarrito"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h3>REDES SOCIALES</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/rockandvida/?locale=es_LA"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook fa-xl"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/rockyvida/?hl=es"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram fa-xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://x.com/RockyVida" target="_blank">
+              <i class="fa-brands fa-x-twitter fa-xl"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a
+          class="contenedorWatsapp"
+          href="https://www.whatsapp.com/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+      <div>
+        <a href="contacto.html#header">
+          <i class="fa-solid fa-arrow-up fa-2xl"></i>
+          <p>Ir Arriba</p>
+        </a>
+      </div>
+      <div>
+        <p>&copy; Todos los derechos reservados 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
