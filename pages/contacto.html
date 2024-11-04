@@ -19,17 +19,13 @@
           src="../assets/img/Logo Cero Huella Redondo.png"
           alt=" logo Cero Huella- Rock&Vida, un circulo con una huella de zapato"
         />
-        <img
-          class="logoRV"
-          src="../assets/img/R&V Logo Verde 1024(2).png"
-          alt=""
-        />
+        <!--<img class="logoRV" src="../assets/img/R&V Logo Verde 1024(2).png" alt=""/>-->
       </a>
 
       <nav>
         <ul>
           <li><a href="../index.html">INICIO</a></li>
-          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="#">NOSOTROS</a></li>
           <li><a href="productos.html">PRODUCTOS</a></li>
           <li><a href="#">CONTACTO</a></li>
           <li>
@@ -133,7 +129,7 @@
             />
           </div>
           <div class="contenedorInput">
-            <select name="provincia" id="prov">
+            <select name="provincia" id="prov" required>
               <option value="sin" selected>Seleccione una provincia</option>
               <option value="Caba">Capital Federal</option>
               <option value="Buenos Aires">Bs. As.</option>
@@ -180,7 +176,7 @@
       <div class="contenedorIframe">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13129.834635207251!2d-58.4172243!3d-34.643118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb4fc96babf1%3A0xb1d8999bd3d7ae9a!2sRock%20%26%20Vida!5e0!3m2!1ses-419!2sar!4v1727317955078!5m2!1ses-419!2sar"
-          width="600"
+          width="500"
           height="450"
           style="border: 0"
           allowfullscreen=""
@@ -189,16 +185,17 @@
         ></iframe>
       </div>
     </main>
-    <footer class="footer colorSecundario">
+    <footer class="footer  colorSecundario"  >
       <div>
         <a href="../index.html">
           <img
             class="logo"
-            src="../assets/img/logoCeroHuellas.jpeg"
+            src="../assets/img/logo_cero_huellas_r&v.png"
             alt="Logo de Cero Huellas- Rock&Vida,"
             loading="lazy"
           />
         </a>
+       
       </div>
       <address>
         <p>
@@ -207,72 +204,50 @@
         </p>
         <p><span class="fuenteNegrita">Teléfono:</span> +54 9 11 5997-3967</p>
         <p>
-          <span class="fuenteNegrita">Correo electrónico:</span
-          >contacto@talento.com
+          <span class="fuenteNegrita">Correo electrónico:</span>
+          cerohuella@rockyvida.com
         </p>
+       
       </address>
 
       <div>
         <nav>
           <h3>CONTENIDO</h3>
           <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../index.html#nosotros">NOSOTROS</a></li>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="#">NOSOTROS</a></li>
             <li><a href="productos.html">PRODUCTOS</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-            <li>
-              <a href="carrito.html">
-                <i class="fa-solid fa-cart-shopping tamañoCarrito"></i>
-              </a>
-            </li>
+            <li><a href="#">CONTACTO</a></li>
+          <li><a href="carrito.html">
+            <i class="fa-solid fa-cart-shopping  tamañoCarrito" ></i>
+          </a>
+          </li>
           </ul>
         </nav>
       </div>
 
       <div>
         <h3>REDES SOCIALES</h3>
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/rockandvida/?locale=es_LA"
-              target="_blank"
-            >
-              <i class="fa-brands fa-facebook fa-xl"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/rockyvida/?hl=es"
-              target="_blank"
-            >
-              <i class="fa-brands fa-instagram fa-xl"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://x.com/RockyVida" target="_blank">
-              <i class="fa-brands fa-x-twitter fa-xl"></i
-            ></a>
-          </li>
-        </ul>
+        <ul class="redesSociales">
+          <li><a href="https://www.facebook.com/rockandvida/?locale=es_LA" target="_blank">
+            <i class="fa-brands fa-facebook fa-xl"></i>
+          </a></li>
+          <li><a href="https://www.instagram.com/rockyvida/?hl=es" target="_blank">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+          </a></li>
+          <li><a href="https://x.com/RockyVida" target="_blank">
+            <i class="fa-brands fa-x-twitter fa-xl"></i>
+          </a></li>
+        </ul> 
       </div>
-      <div>
-        <a
-          class="contenedorWatsapp"
-          href="https://www.whatsapp.com/"
-          target="_blank"
-        >
-          <i class="fa-brands fa-whatsapp"></i>
+      <div >
+        <a class="contenedorWatsapp" href="https://www.whatsapp.com/" target="_blank">
+          <i class="fa-brands fa-whatsapp "></i>
         </a>
-      </div>
-      <div>
-        <a href="contacto.html#header">
-          <i class="fa-solid fa-arrow-up fa-2xl"></i>
-          <p>Ir Arriba</p>
-        </a>
-      </div>
-      <div>
-        <p>&copy; Todos los derechos reservados 2024</p>
       </div>
     </footer>
+    <div class="contenedorCopyrigth">
+        <p class="colorSecundario">&copy; Cero Huella- Rock&Vida Todos los derechos reservados 2024</p>
+    </div>
   </body>
 </html>

@@ -23,7 +23,7 @@ h3{
     font-size: 1.2rem;
 }
 p{
-    font-weight: 700;
+    font-weight: 500;
 }
 
 /*ESTILO DEL HEADER*/
@@ -40,7 +40,7 @@ p{
     
         a{
             display: flex;
-            font-size: 0.9em;
+            font-size: 0.8em;
             color: white;
             text-decoration: none;
             align-items: center;
@@ -54,7 +54,7 @@ p{
             display: flex;
             list-style: none;
             li{
-                padding: 15px;
+                padding: 10px;
             }
         }
         .logo{
@@ -86,11 +86,22 @@ p{
 
 .colorGradiente{
    /*  background-image: radial-gradient(circle, #a5e1aa, #93e397, #80e483, #6ce56c, #56e553, #40d554, #28c553, #00b552, #00905a, #006b54, #024741, #1c2525);*/
-   background-image: radial-gradient(circle, #7cb744, #7ec33f, #80cf38, #81dc30, #81e826, #7adb26, #72ce26, #6bc125, #5b992a, #4a722a, #394e27, #272c22);
-    color: white;
+  /*background-image: radial-gradient(circle, #7cb744, #7ec33f, #80cf38, #81dc30, #81e826, #7adb26, #72ce26, #6bc125, #5b992a, #4a722a, #394e27, #272c22);
+    color: white;*/ 
+    background-image: radial-gradient(circle, #7cb744, #41bc73, #00bd9f, #00bbc2, #00b5d6, #3bbad7, #56bfd8, #6bc4d9, #90d4d4, #b6e1d4, #daeede, #f7fbf2);
 }
 .fuenteNegrita{
     font-weight: 300;
+}
+.boton{
+    display: inline-block;
+        margin-top: 30px;
+        padding: 10px;
+        border: 2px,solid, white;
+        border-radius: 6px;
+        text-decoration: none;
+        color: white;
+        box-shadow: -11px 14px 34px -6px rgba(69,61,61,0.89);
 }
 
 
@@ -119,7 +130,7 @@ p{
         background-position: center;
         width: 200px;
     }
-    a{
+    /*a{
         display: inline-block;
         margin-top: 30px;
         padding: 10px;
@@ -129,6 +140,7 @@ p{
         color: white;
         box-shadow: -11px 14px 34px -6px rgba(69,61,61,0.89);
     }
+    */
 }
 
 
@@ -196,7 +208,7 @@ p{
         width: 50%;
         backdrop-filter: blur(15px) ;
     }
-    a{
+   /*a{
         display: inline-block;
         margin-top: 30px;
         padding: 10px;
@@ -206,14 +218,41 @@ p{
         color: white;
         box-shadow: -11px 14px 34px -6px rgba(69,61,61,0.89);
     }
+   */ 
 }
 
 /*ESTILOS SECCION INDEX-NOSOTROS*/
-.seccionNosotros{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.nosotros{
+    background-color: #53ABE0;
+    margin: 10px 0;
+    padding:50px 0;
+    h2{
+        color: white;
+    }
+    .seccionNosotros{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        .imagenIndexNosotros{
+              
+            width: 50%;
+            img{
+               
+                width: 100%;
+            }
+        }
+        .textoIndexNosotros{
+            width: 45%;
+            p{
+                color: white;
+                line-height: 1.5;
+                font-size: 1.3rem;
+                margin-right: 10px;
+            }
+        }
+    }
 
 }
 
@@ -278,13 +317,13 @@ p{
 
 /*ESTILO PAGINA CONTACTO*/
 .mainContacto{
+    width: 100%;
     padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     .contenedorFormulario{
-        width:100vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -317,9 +356,10 @@ p{
                     box-shadow: -11px 14px 34px -6px rgba(31, 30, 30, 0.89);
                 }
              }     
-    }   
-}
+       }   
+   }
     .contenedorIframe{
+        padding-top: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -330,17 +370,16 @@ p{
 
 /*ESTILOS DEL FOOTER*/
 .footer{
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 5px;
     address{
-        padding: 2px;
+        padding: 0;
     }
     p{
-        padding: 5px;
+        padding-top: 10px;
         margin: 0;
     }
     .redesSociales{
