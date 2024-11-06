@@ -443,11 +443,8 @@ p{
     }
 }
 
-@media screen and (max-width : 768px) {
-    *{
-        margin: 0;
-        padding:0;
-    }
+@media screen and (max-width : 800px) {
+   
     /*ESTILOS DE ETIQUETAS*/
     
     h1{
