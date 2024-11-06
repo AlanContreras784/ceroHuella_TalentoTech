@@ -58,8 +58,8 @@ p{
             }
         }
         .logo{
-            width: 80px;
-            background-color:white ;
+            width: 85px;
+            
         }
         
         .tamañoCarrito{
@@ -263,12 +263,11 @@ p{
     padding-top: 50px;
 
     h1{
-        padding: 30px;
+        padding: 40px;
     }
     h2{
-        padding: 20px;
+        padding-bottom: 50px;
         margin:0 auto;
-        padding-bottom: 20px;
         width: 50vw;
     }
     h3{
@@ -377,12 +376,13 @@ p{
 /*ESTILOS DEL FOOTER*/
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 5px;
+    column-gap: 80px;
     address{
-        padding-right: 100px;
+        padding:0;
     }
     p{
         padding-top: 10px;
@@ -395,7 +395,8 @@ p{
     }   
     a{
         display: inline-block;
-        padding: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         text-align: center;
         font-size: 0.9em;
         color: white;
@@ -405,11 +406,11 @@ p{
         list-style: none;
         li{
             padding-top: 2px;
-        margin: 5px;
+            margin-top: 5px;
         }
     }
     .logo{
-        width: 100px;
+        width: 120px;
     }
     
 
@@ -463,7 +464,7 @@ p{
         .galeria{
             div{
                 width: 300px;
-                height: 500px;
+                height: 450px;
 
             }
         }
@@ -478,7 +479,7 @@ p{
     }
 
     .footer{
-        column-gap: 200px;
+        column-gap: 20px;
         row-gap: 20px;
     }
 }
