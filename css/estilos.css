@@ -391,8 +391,14 @@ p {
   .main {
     grid-area: main;
     padding-top: 50px;
+    h2{
+        text-align: center;
+        padding-bottom: 20px;
+      }
     p {
       font-size: 1.3rem;
+      text-align: center;
+      padding-bottom: 20px;
     }
     .mainNosotros {
       display: grid;
@@ -404,14 +410,6 @@ p {
         "terceraFila terceraFila"
         "cuartaFila cuartaFila";
       padding: 20px;
-      h2{
-        text-align: center;
-        padding-bottom: 20px;
-      }
-      p{
-        text-align: center;
-        padding-bottom: 20px;
-      }
       .priFila {
         grid-area: priFila;
         display: flex;
@@ -448,7 +446,7 @@ p {
         margin: 0 auto;
         padding: 20px;
       }
-    }
+  }
  
 
   .aside {
@@ -528,7 +526,6 @@ p {
   .contenedorCopyrigth {
     p {
       padding: 10px;
-      text-align: start;
     }
   }
 }
@@ -552,11 +549,11 @@ p {
   p {
     font-weight: 500;
   }
-/*ESTILO HEADER MOVIL*/
+/* MEDIAQ ESTILO HEADER MOVIL*/
   .header {
     justify-content: center;
   }
-/*ESTILO INDEX-NOSOTROS*/
+/*MEDIAQ ESTILO INDEX-NOSOTROS*/
   .nosotros {
     .seccionNosotros {
       flex-direction: column;
@@ -572,7 +569,7 @@ p {
       }
     }
   }
-/*ESTILO PAGINA PROUCTOS*/
+/*MEDIAQ ESTILO PAGINA PROUCTOS*/
   .mainProductos {
     .galeria {
       div {
@@ -581,7 +578,7 @@ p {
       }
     }
   }
-/*ESTILO PAGINA CONTACTO*/  
+/*MEDIAQ ESTILO PAGINA CONTACTO*/  
   .mainContacto {
     .contenedorIframe {
       iframe {
@@ -589,8 +586,61 @@ p {
       }
     }
   }
-/*ESTILO PAGINA NOSOTROS*/
-   .mainNosotros   
+/*MEDIAQ ESTILO PAGINA NOSOTROS*/
+   .contenedorNosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:"header"
+                        "main"
+                        "aside"
+                        "footer"                        
+    ;
+    .header{
+        grid-area: header;
+    }
+    .main{
+        grid-area: main;
+        .mainNosotros{
+            .priFila{
+                div{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+            .terceraFila{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                video{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+    .aside{
+        grid-area: aside;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content:space-evenly;
+        align-items: center;
+        div{
+            width: 250px;
+            img{
+                width: 100%;
+            }
+        }
+       
+    }
+    .footer{
+        grid-area: footer;
+    }
+   }  
 /*ESTILO FOOTER*/
   .footer {
     column-gap: 20px;
