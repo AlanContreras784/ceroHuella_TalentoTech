@@ -463,7 +463,7 @@ p {
   .footer {
     grid-area: footer;
   }
-
+}
 /*ESTILOS DEL FOOTER*/
 .footer {
   display: flex;
@@ -528,11 +528,11 @@ p {
   .contenedorCopyrigth {
     p {
       padding: 10px;
-      align-items: start;
+      text-align: start;
     }
   }
 }
-}
+
 @media screen and (max-width: 800px) {
   /*ESTILOS DE ETIQUETAS*/
 
